@@ -143,15 +143,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (btnHovering) {
         // Create accent radial spotlight glow in button - soft lavender
         const grad = ctx.createRadialGradient(hoverX, hoverY, 0, hoverX, hoverY, w * 0.7);
-        grad.addColorStop(0, 'rgba(192, 132, 252, 0.05)');
-        grad.addColorStop(0.5, 'rgba(192, 132, 252, 0.015)');
+        grad.addColorStop(0, 'rgba(43, 102, 255, 0.05)');
+        grad.addColorStop(0.5, 'rgba(43, 102, 255, 0.015)');
         grad.addColorStop(1, 'transparent');
         
         ctx.fillStyle = grad;
         ctx.fillRect(0, 0, w, h);
         
         // Dynamic border highlighting on canvas boundary
-        ctx.strokeStyle = 'rgba(192, 132, 252, 0.15)';
+        ctx.strokeStyle = 'rgba(43, 102, 255, 0.15)';
         ctx.lineWidth = 1;
         ctx.strokeRect(0, 0, w, h);
       }
