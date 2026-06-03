@@ -66,33 +66,61 @@
   <!-- Preload fonts to avoid layout shift -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&amp;family=Inter:wght@400;500;700&amp;family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Geist:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 </head>
 <body class="loading">
 
-  <!-- Futuristic Stitch MCP Connection Loader -->
+  <!-- Atmospheric Portfolio Loader -->
   <div id="loader-screen" class="loader-overlay">
-    <div class="loader-container">
-      <!-- Rotating tech orb representing Stitch Connection -->
-      <div class="stitch-orb-wrapper">
-        <div class="stitch-orb-core"></div>
-        <div class="stitch-orb-ring ring-1"></div>
-        <div class="stitch-orb-ring ring-2"></div>
-        <div class="stitch-orb-ring ring-3"></div>
-      </div>
-      
-      <!-- Terminal Connection Log -->
-      <div class="loader-terminal">
-        <div class="terminal-header">
-          <span class="terminal-dot red"></span>
-          <span class="terminal-dot yellow"></span>
-          <span class="terminal-dot green"></span>
-          <span class="terminal-title">Stitch MCP Console</span>
+    <!-- Atmospheric Background Effect -->
+    <div class="loader-glow"></div>
+    
+    <main class="loader-content">
+      <!-- Header Section -->
+      <header class="loader-header">
+        <div class="loader-header-icons">
+          <div class="loader-icon-btn" title="Code">
+            <span class="material-symbols-outlined">code</span>
+          </div>
+          <div class="loader-icon-btn" title="About">
+            <span class="material-symbols-outlined">person</span>
+          </div>
+          <div class="loader-icon-btn" title="Language">
+            <span class="material-symbols-outlined">language</span>
+          </div>
         </div>
-        <div class="terminal-body" id="loader-terminal-log"></div>
+      </header>
+
+      <!-- Main Loading Content -->
+      <div class="loader-main">
+        <!-- Hero Heading -->
+        <h1 class="loader-title">
+          Welcome To My <span class="loader-subtitle">Portfolio Website</span>
+        </h1>
+        
+        <!-- URL Bar Container -->
+        <div class="loader-url-bar" id="loader-url-bar">
+          <span class="material-symbols-outlined loader-url-icon">public</span>
+          <div class="loader-url-text">
+            <span class="typing-container" id="url-text">https://mel1dev.vercel.app</span><span class="cursor-blink">|</span>
+          </div>
+        </div>
       </div>
-      
-      <button class="loader-skip-btn" id="loader-skip">SKIP CONNECTION</button>
-    </div>
+
+      <!-- Footer Segment -->
+      <footer class="loader-footer">
+        <div class="loader-footer-container">
+          <span class="loader-footer-text">mel1.dev/loading</span>
+          <div class="loader-footer-divider"></div>
+          <div class="loader-footer-links">
+            <a class="loader-footer-link" href="#" onclick="event.preventDefault();">Status</a>
+            <a class="loader-footer-link" href="#" onclick="event.preventDefault();">Privacy</a>
+          </div>
+        </div>
+      </footer>
+    </main>
   </div>
 
   <!-- Fixed Interactive Background Elements (User requested fixed background effect animation) -->
