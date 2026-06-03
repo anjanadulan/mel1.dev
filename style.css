@@ -1447,19 +1447,19 @@ footer {
   }
   
   p {
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-    letter-spacing: 1px !important; /* Tighter letter spacing for mobile reading */
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0.5px !important;
   }
   
   .hero-pretitle {
-    font-size: 11px !important;
+    font-size: 12px !important;
     letter-spacing: 3px !important;
     margin-bottom: var(--space-xs) !important;
   }
   
   .hero-subtitle {
-    font-size: 13px !important;
+    font-size: 14px !important;
     letter-spacing: 1px !important;
     margin-bottom: var(--space-sm) !important;
   }
@@ -1474,20 +1474,21 @@ footer {
   }
   
   .hero-desc {
-    font-size: 13px !important;
+    font-size: 16px !important;
     letter-spacing: 0.5px !important;
-    line-height: 1.5 !important;
+    line-height: 1.6 !important;
     margin-bottom: var(--space-md) !important;
   }
   
   .lead-p {
-    font-size: 14px !important;
-    letter-spacing: 1px !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0.5px !important;
   }
 
   .small-p {
-    font-size: 12px !important;
-    line-height: 1.4 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
   }
 
   /* 2. Layout Section Spacing */
@@ -2134,8 +2135,8 @@ body.active-bg-visible .bg-tech-active-effect {
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 36px;
-  height: 36px;
+  width: 44px; /* Increased to 44px for touch targets */
+  height: 44px; /* Increased to 44px for touch targets */
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
