@@ -755,18 +755,6 @@ nav {
   border-radius: inherit; /* Inherit rounded rectangle from parent */
 }
 
-.btn-primary .btn-glint,
-.btn-secondary .btn-glint {
-  position: absolute;
-  top: 3px;
-  left: 12%;
-  right: 12%;
-  height: 35%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 0%, transparent 100%);
-  border-radius: inherit; /* Inherit from parent */
-  z-index: 2;
-  pointer-events: none;
-}
 
 .btn-primary span {
   position: relative;
