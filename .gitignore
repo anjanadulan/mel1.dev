@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Local caches and agent files
+.agents/
+scratch/
+.gemini/
+.env
+.env.*
+.DS_Store
+Thumbs.db

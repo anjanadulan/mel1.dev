@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Melisha Devaraj - Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Melisha Devaraj, a Software Engineering student at NIBM specializing in Frontend Development, UI/UX Design, and Full-Stack Systems.">
+  <meta name="theme-color" content="#0a0a0a">
+  
+  <!-- Preload Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Preload fonts to avoid layout shift -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- Fixed Interactive Background Elements (User requested fixed background effect animation) -->
+  <div class="bg-mesh-container">
+    <div class="bg-grid"></div>
+    <div class="bg-scanlines"></div>
+    
+    <!-- Active Scroll Tech Background Effect (Fades in starting at Projects section) -->
+    <div class="bg-tech-active-effect"></div>
+    
+    <!-- New Glowing Grid Mesh Overlay Effect -->
+    <div class="bg-mshr-overlay"></div>
+
+    <!-- Parallax background glow orbs -->
+    <div class="bg-parallax-wrapper" style="transform: translateY(calc(var(--scroll-y, 0) * 0.08px));">
+      <div class="bg-glow-orb orb-1"></div>
+    </div>
+    <div class="bg-parallax-wrapper" style="transform: translateY(calc(var(--scroll-y, 0) * -0.06px));">
+      <div class="bg-glow-orb orb-2"></div>
+    </div>
+    <div class="bg-parallax-wrapper" style="transform: translateY(calc(var(--scroll-y, 0) * 0.04px));">
+      <div class="bg-glow-orb orb-3"></div>
+    </div>
+  </div>
+  
+  <!-- Cursor trackers (Interactive premium layer) -->
+  <div class="cursor-ring"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="nav-border-glow"></div>
+      <div class="nav-hover-glow"></div>
+      <div class="nav-container">
+        <a class="nav-logo" href="#">mel1.dev</a>
+        
+        <!-- Desktop Menu -->
+        <div class="nav-links">
+          <a class="nav-link-item active" href="#">HOME</a>
+          <div class="nav-divider"></div>
+          <a class="nav-link-item" href="#projects">PROJECTS</a>
+          <a class="nav-link-item" href="#about">PERSONA</a>
+          <a class="nav-link-item" href="#education">EDUCATION</a>
+          <a class="nav-link-item" href="#contact">CONTACT</a>
+        </div>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobile-nav-btn" aria-label="Toggle Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Dropdown -->
+        <div class="nav-mobile-dropdown" id="mobile-dropdown">
+          <a class="nav-link-item" href="#">HOME</a>
+          <a class="nav-link-item" href="#projects">PROJECTS</a>
+          <a class="nav-link-item" href="#about">PERSONA</a>
+          <a class="nav-link-item" href="#education">EDUCATION</a>
+          <a class="nav-link-item" href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+    <div class="hero-circles">
+      <div class="circle-bg cb-1"></div>
+      <div class="circle-bg cb-2"></div>
+      <div class="circle-bg cb-3"></div>
+      <div class="circle-bg cb-4"></div>
+    </div>
+
+    <!-- Floating Technology Skill Cards around Hero content -->
+    <div class="hero-parallax-icons" style="transform: translateY(calc(var(--scroll-y, 0) * 0.12px));">
+      <!-- 1. Java -->
+      <div class="icon-float icon-java">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00d9ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+            <path d="M2 8h14v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8Z" />
+            <path d="M6 3c.5 1-1 2 0 3M10 2c.5 1-1 2 0 3M14 3c.5 1-1 2 0 3" />
+          </svg>
+        </div>
+        <span class="icon-label">Java</span>
+      </div>
+
+      <!-- 2. C -->
+      <div class="icon-float icon-c">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00d9ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+            <path d="M16 8a5.5 5.5 0 1 0 0 8" />
+            <circle cx="12" cy="12" r="10" stroke-dasharray="2 3" opacity="0.3" />
+          </svg>
+        </div>
+        <span class="icon-label">C</span>
+      </div>
+
+      <!-- 3. HTML -->
+      <div class="icon-float icon-html">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00d9ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+            <path d="m8 17-5-5 5-5M16 7l5 5-5 5M14 4l-4 16" />
+          </svg>
+        </div>
+        <span class="icon-label">HTML5</span>
+      </div>
+
+      <!-- 4. PHP -->
+      <div class="icon-float icon-php">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00d9ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+            <ellipse cx="12" cy="12" rx="10" ry="6" />
+            <path d="M7 14.5V9.5h2a1.25 1.25 0 0 1 0 2.5H7M12 14.5V9.5h2a1.25 1.25 0 0 1 0 2.5h-2M17 14.5V9.5" />
+          </svg>
+        </div>
+        <span class="icon-label">PHP</span>
+      </div>
+
+      <!-- 5. MySQL -->
+      <div class="icon-float icon-mysql">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00d9ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
+            <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" />
+          </svg>
+        </div>
+        <span class="icon-label">MySQL</span>
+      </div>
+
+      <!-- 6. Python -->
+      <div class="icon-float icon-python">
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#00d9ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+            <path d="M12 2C9.5 2 7.5 3 7.5 5v2H12v1H5.5C3.5 8 2 9.5 2 12s1.5 4 3.5 4H7v-2.5C7 11.5 9 10 12 10s5 1.5 5 3.5V16h1.5c2 0 3.5-1.5 3.5-4s-1.5-4-3.5-4H17V5C17 3 15 2 12 2Z"/>
+            <circle cx="9" cy="5" r="0.8" fill="#00d9ff"/>
+            <circle cx="15" cy="19" r="0.8" fill="#00d9ff"/>
+          </svg>
+        </div>
+        <span class="icon-label">Python</span>
+      </div>
+    </div>
+
+    <div class="hero-content container">
+      <p class="hero-pretitle">Hello! I'm</p>
+      <h1 class="hero-title">Melisha Devaraj</h1>
+      <p class="hero-subtitle">BSc (Hons) Software Engineering Student</p>
+      
+      <!-- Cycling Roles Display Animation -->
+      <div class="role-wrapper">
+        <span class="hero-role role-in" id="hero-role-text">Student</span>
+      </div>
+
+      <!-- Active dot pill status tracker -->
+      <div class="dot-indicator">
+        <div class="dot-pill active"></div>
+        <div class="dot-pill"></div>
+        <div class="dot-pill"></div>
+        <div class="dot-pill"></div>
+      </div>
+
+      <p class="hero-desc">
+        Focusing on designing highly intuitive frontend layouts, clean interface aesthetics, and exploring robust full-stack software development.
+      </p>
+
+      <div class="hero-actions">
+        <!-- Interactive Canvas Buttons (User template feature) -->
+        <a href="#projects" class="btn-primary btn-pill-large btn-canvas-interactive">
+          <canvas></canvas>
+          <span class="btn-glint"></span>
+          <span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+              <path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16" />
+            </svg>
+            Projects
+          </span>
+        </a>
+        <a href="#contact" class="btn-secondary btn-pill-large">
+          <span>Contact Me</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider container"></div>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-card reveal-on-scroll">
+        <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="carousel-container">
+        <!-- Navigation Buttons -->
+        <button class="carousel-btn btn-prev" aria-label="Previous Slide">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track">
+            <!-- Project 1: DISTRIBUTOR-MS -->
+            <div class="carousel-item" data-title="Distributor MS" data-desc="A comprehensive distributor management system designed to streamline supply chain operations, track orders, monitor inventory levels, and optimize logistics in real-time. It provides automatic stock level alerts, generates sales reports, and handles invoices." data-languages="Java, MySQL, Swing, Desktop App" data-github="https://github.com/anjanadulan/DISTRIBUTOR-MS" data-demo="" data-glow="#00e5ff">
+              <div class="card project-card">
+                <div>
+                  <div class="project-glow-bar"></div>
+                  <h3 class="project-title">Distributor MS</h3>
+                  <p class="project-desc">
+                    A comprehensive distributor management system designed to streamline supply chain operations, track orders, monitor inventory levels, and optimize logistics in real-time.
+                  </p>
+                </div>
+                <div>
+                  <div class="project-tags">
+                    <span class="project-tag">Java</span>
+                    <span class="project-tag">MySQL</span>
+                    <span class="project-tag">Desktop App</span>
+                  </div>
+                  <a class="project-link-icon" href="https://github.com/anjanadulan/DISTRIBUTOR-MS" target="_blank" rel="noopener noreferrer">
+                    View on GitHub 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: smart-prison-prototype -->
+            <div class="carousel-item" data-title="Smart Prison Prototype" data-desc="An innovative prototype simulating automated inmate tracking, surveillance logs, biometric authentication layers, and secure containment access control. Uses IoT concepts for emergency overrides and real-time security alerts." data-languages="C, Python, SQL, IoT System" data-github="https://github.com/anjanadulan/smart-prison-prototype" data-demo="" data-glow="#a78bfa">
+              <div class="card project-card">
+                <div>
+                  <div class="project-glow-bar" style="background: #a78bfa; box-shadow: 0 0 8px #a78bfa;"></div>
+                  <h3 class="project-title">Smart Prison Prototype</h3>
+                  <p class="project-desc">
+                    An innovative prototype simulating automated inmate tracking, surveillance logs, biometric authentication layers, and secure containment access control.
+                  </p>
+                </div>
+                <div>
+                  <div class="project-tags">
+                    <span class="project-tag">C</span>
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">IoT System</span>
+                  </div>
+                  <a class="project-link-icon" href="https://github.com/anjanadulan/smart-prison-prototype" target="_blank" rel="noopener noreferrer" style="color: #a78bfa;">
+                    View on GitHub 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: BookStore_website-CW- -->
+            <div class="carousel-item" data-title="Book Store Website" data-desc="A dynamic bookstore e-commerce platform built as coursework, featuring user registration, shopping cart capabilities, search indexing, and administrator control panels for book inventory and orders." data-languages="PHP, MySQL, HTML/CSS, Web Dev" data-github="https://github.com/anjanadulan/BookStore_website-CW-" data-demo="https://bookstore-demo.example.com" data-glow="#f59e0b">
+              <div class="card project-card">
+                <div>
+                  <div class="project-glow-bar" style="background: #f59e0b; box-shadow: 0 0 8px #f59e0b;"></div>
+                  <h3 class="project-title">Book Store Website</h3>
+                  <p class="project-desc">
+                    A dynamic bookstore e-commerce platform built as coursework, featuring user registration, shopping cart capabilities, search indexing, and administrator control panels.
+                  </p>
+                </div>
+                <div>
+                  <div class="project-tags">
+                    <span class="project-tag">PHP</span>
+                    <span class="project-tag">MySQL</span>
+                    <span class="project-tag">HTML/CSS</span>
+                    <span class="project-tag">Web Dev</span>
+                  </div>
+                  <a class="project-link-icon" href="https://github.com/anjanadulan/BookStore_website-CW-" target="_blank" rel="noopener noreferrer" style="color: #f59e0b;">
+                    View on GitHub 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn btn-next" aria-label="Next Slide">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Indicators Dots -->
+      <div class="carousel-dots">
+        <div class="carousel-dot active"></div>
+        <div class="carousel-dot"></div>
+        <div class="carousel-dot"></div>
+      </div>
+      </div> <!-- End .section-card -->
+    </div>
+  </section>
+
+  <div class="divider container"></div>
+
+  <!-- About / Persona Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-card reveal-on-scroll">
+        <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Column 1: Info and quote -->
+        <div class="card about-card-info" style="--item-index: 1;">
+          <div>
+            <p class="small-p" style="color: var(--accent); font-weight: 500; font-family: monospace; font-size: 11px; margin-bottom: 8px; letter-spacing: 2px;">/ ABOUT</p>
+            <p>
+              I'm Melisha — a second-year BSc (Hons) Software Engineering student at NIBM. I design frontend structures, create clean interfaces, and build responsive web applications.
+            </p>
+            <p style="margin-top: 12px;">
+              I love engineering systems at the intersection of aesthetic design and logical code. I focus on detail, structured architectures, and building intuitive digital products.
+            </p>
+          </div>
+          <div class="about-quote">
+            "Designing with empathy, coding with precision."
+          </div>
+        </div>
+
+        <!-- Column 2: Location Card -->
+        <div class="card location-card" style="--item-index: 2;">
+          <div class="location-overlay"></div>
+          <div class="location-grid-pattern"></div>
+          
+          <div class="location-header">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            LOCATION · COLOMBO, SL
+          </div>
+
+          <div class="location-info">
+            <div class="location-country">SRI LANKA</div>
+            <div class="location-coords">6.9272° N, 79.8612° E</div>
+            <div class="location-time">GMT+5:30</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core focus values -->
+      <div class="values-grid">
+        <div class="value-card value-title-growth" style="--item-index: 1;">
+          <div class="value-title">GROWTH</div>
+          <div class="value-desc">Continually exploring modern development frameworks, databases, and structural coding practices.</div>
+        </div>
+        <div class="value-card value-title-focus" style="--item-index: 2;">
+          <div class="value-title">FOCUS</div>
+          <div class="value-desc">Designing user journeys with clear content structures, intuitive UI cues, and polished responsive layouts.</div>
+        </div>
+        <div class="value-card value-title-craft" style="--item-index: 3;">
+          <div class="value-title">CRAFT</div>
+          <div class="value-desc">Writing clean, reliable components and developing robust prototypes that solve real issues.</div>
+        </div>
+      </div>
+      </div> <!-- End .section-card -->
+    </div>
+  </section>
+
+  <div class="divider container"></div>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <div class="section-card reveal-on-scroll">
+        <div class="section-header">
+        <p class="section-pretitle">Academic Path</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Education Card: NIBM -->
+        <div class="card timeline-card" style="--item-index: 1;">
+          <div class="timeline-left">
+            <div class="timeline-dot"></div>
+            <span class="timeline-period">2024 — 2027</span>
+            <h3 class="timeline-degree">BSc (Hons) Software Engineering</h3>
+            <p class="timeline-field">2nd Year Undergraduate Degree Student</p>
+            <p class="timeline-institute">National Institute of Business Management (NIBM)</p>
+          </div>
+          
+          <div class="timeline-right">
+            <!-- NIBM Campus Visual Card (User template visual style) -->
+            <div class="timeline-visual-box">
+              <div class="nibm-canvas-placeholder">
+                <div class="nibm-logo-effect">NIBM</div>
+                <div class="nibm-canvas-overlay">
+                  <div class="nibm-campus-title">National Institute of Business Management</div>
+                  <div class="nibm-campus-loc">Colombo Campus · Sri Lanka</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div> <!-- End .section-card -->
+    </div>
+  </section>
+
+  <div class="divider container"></div>
+
+  <!-- Contact / Reach Out Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-card reveal-on-scroll">
+        <div class="contact-container">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <h2 class="section-title">Reach Out</h2>
+        </div>
+        
+        <p class="contact-text">
+          I'm always open to talking about front-end projects, design system structures, collaborations, or developer networking. Feel free to connect with me!
+        </p>
+
+        <div class="contact-links">
+          <!-- Button links styled to match design system guidelines -->
+          <a href="https://www.linkedin.com/in/melisha-devaraj-8a2ba3337/" target="_blank" rel="noopener noreferrer" class="btn-primary btn-pill-large">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn Profile
+            </span>
+          </a>
+          
+          <a href="https://github.com/anjanadulan" target="_blank" rel="noopener noreferrer" class="btn-secondary btn-pill-large">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              GitHub Profile
+            </span>
+          </a>
+        </div>
+      </div>
+      </div> <!-- End .section-card -->
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <a class="footer-logo" href="#">mel1.dev</a>
+      <div class="footer-copy">&copy; 2026 Melisha Devaraj. Built with precision and dark glowing aesthetics.</div>
+    </div>
+  </footer>
+
+  <!-- Bottom Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Project Detail Modal -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close modal">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content">
+        <div class="modal-glow-bar"></div>
+        <h3 id="modal-project-title" class="modal-title"></h3>
+        <p id="modal-project-desc" class="modal-desc"></p>
+        
+        <div class="modal-meta-section">
+          <h4>TECH STACK</h4>
+          <div id="modal-project-languages" class="project-tags"></div>
+        </div>
+        
+        <div class="modal-actions">
+          <a id="modal-project-github" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub Repository
+            </span>
+          </a>
+          <a id="modal-project-demo" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              Live Demo
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Interaction Script -->
+  <script src="script.js"></script>
+</body>
+</html>
