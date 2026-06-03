@@ -764,7 +764,8 @@ nav {
   transition: transform 0.1s ease;
 }
 
-.btn-primary canvas {
+.btn-primary canvas,
+.btn-secondary canvas {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -773,7 +774,8 @@ nav {
   border-radius: inherit; /* Inherit rounded rectangle from parent */
 }
 
-.btn-primary .btn-glint {
+.btn-primary .btn-glint,
+.btn-secondary .btn-glint {
   position: absolute;
   top: 3px;
   left: 12%;
@@ -872,9 +874,6 @@ nav {
   border-radius: 12px; /* Enforce rounded-rectangle border radius */
 }
 
-.btn-large span {
-  color: rgba(0, 217, 255, 0.85) !important;
-}
 
 /* 2. CARDS */
 .card {
@@ -1532,7 +1531,8 @@ footer {
     justify-content: center !important;
   }
 
-  .btn-primary canvas {
+  .btn-primary canvas,
+  .btn-secondary canvas {
     border-radius: inherit !important;
   }
 
