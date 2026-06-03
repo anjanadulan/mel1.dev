@@ -562,7 +562,7 @@ nav {
 }
 
 .hero-role {
-  font-family: 'Comfortaa', cursive, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 38px;
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -886,7 +886,7 @@ nav {
 }
 
 .section-pretitle {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   color: var(--text-muted);
   text-transform: uppercase;
   font-size: 12px;
@@ -928,7 +928,7 @@ nav {
 }
 
 .project-title {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: var(--text);
@@ -936,7 +936,7 @@ nav {
 }
 
 .project-desc {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 14px;
   color: var(--text-secondary);
   line-height: 1.5;
@@ -952,7 +952,7 @@ nav {
 }
 
 .project-tag {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 10px;
   font-weight: 400;
   background: rgba(var(--accent-rgb), 0.03);
@@ -1011,7 +1011,7 @@ nav {
 }
 
 .about-card-info p {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 15px;
   letter-spacing: 0.5px;
   line-height: 1.6;
@@ -1019,7 +1019,7 @@ nav {
 }
 
 .about-quote {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 13px;
   font-style: italic;
   border-top: 1px solid var(--border);
@@ -1055,7 +1055,7 @@ nav {
 }
 
 .location-header {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 10px;
   letter-spacing: 2px;
   color: var(--text-muted);
@@ -1081,14 +1081,14 @@ nav {
 }
 
 .location-coords {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 11px;
   color: var(--text-muted);
   margin-bottom: 2px;
 }
 
 .location-time {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 11px;
   color: var(--text-secondary);
 }
@@ -1124,7 +1124,7 @@ nav {
 .value-title-craft  { color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); background: rgba(245, 158, 11, 0.02); }
 
 .value-title {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -1132,7 +1132,7 @@ nav {
 }
 
 .value-desc {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 12px;
   color: var(--text-secondary);
   line-height: 1.4;
@@ -1178,7 +1178,7 @@ nav {
 }
 
 .timeline-period {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 12px;
   color: rgba(0, 217, 255, 0.65);
   letter-spacing: 1px;
@@ -1186,7 +1186,7 @@ nav {
 }
 
 .timeline-degree {
-  font-family: 'Comfortaa', cursive, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: var(--text);
@@ -1194,14 +1194,14 @@ nav {
 }
 
 .timeline-field {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 14px;
   color: var(--text-secondary);
   margin-top: 2px;
 }
 
 .timeline-institute {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 12px;
   color: var(--text-muted);
   margin-top: 2px;
@@ -1231,7 +1231,7 @@ nav {
 }
 
 .nibm-logo-effect {
-  font-family: 'Comfortaa', cursive, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: rgba(0, 217, 255, 0.08);
@@ -1251,7 +1251,7 @@ nav {
 }
 
 .nibm-campus-title {
-  font-family: 'Comfortaa', cursive, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: var(--text);
@@ -1259,7 +1259,7 @@ nav {
 }
 
 .nibm-campus-loc {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 10px;
   color: var(--text-muted);
   margin-top: 2px;
@@ -1276,7 +1276,7 @@ nav {
 }
 
 .contact-text {
-  font-family: 'Comfortaa', cursive, sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   color: var(--text-secondary);
@@ -1306,7 +1306,7 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Comfortaa', cursive, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: var(--accent);
@@ -1314,7 +1314,7 @@ footer {
 }
 
 .footer-copy {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 11px;
   color: var(--text-muted);
 }
