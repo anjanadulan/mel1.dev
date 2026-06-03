@@ -2480,7 +2480,183 @@ body.active-bg-visible .bg-tech-active-effect {
         --mshr-x-2: -4.84058277027027%;
     }
 }
+body.loading {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
 
+/* --- Stitch MCP Connection Loader --- */
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  background: #050506;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), visibility 0.8s;
+  overflow: hidden;
+}
 
+.loader-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 90%;
+  max-width: 520px;
+}
 
+/* Stitch Orb Animation */
+.stitch-orb-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stitch-orb-core {
+  width: 24px;
+  height: 24px;
+  background: var(--accent); /* Cyan */
+  border-radius: 50%;
+  box-shadow: 0 0 24px var(--accent);
+  animation: orbPulse 2s ease-in-out infinite alternate;
+}
+
+.stitch-orb-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid rgba(var(--accent-rgb), 0.15);
+}
+
+.stitch-orb-ring.ring-1 {
+  width: 50px;
+  height: 50px;
+  border-top-color: var(--accent);
+  animation: orbRotate 1.5s linear infinite;
+}
+
+.stitch-orb-ring.ring-2 {
+  width: 76px;
+  height: 76px;
+  border-bottom-color: var(--accent-secondary); /* Dark Blue */
+  animation: orbRotateReverse 2.5s linear infinite;
+}
+
+.stitch-orb-ring.ring-3 {
+  width: 100px;
+  height: 100px;
+  border-left-color: var(--accent);
+  border-right-color: var(--accent-secondary);
+  opacity: 0.5;
+  animation: orbRotate 4s linear infinite;
+}
+
+@keyframes orbPulse {
+  0% { transform: scale(0.9); opacity: 0.8; box-shadow: 0 0 16px var(--accent); }
+  100% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 32px var(--accent); }
+}
+
+@keyframes orbRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes orbRotateReverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* Terminal Console styling */
+.loader-terminal {
+  width: 100%;
+  background: #0b0e17; /* Matches card background */
+  border: 1px solid #171f33; /* Matches card border */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.terminal-header {
+  background: #0f1320;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #171f33;
+}
+
+.terminal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.terminal-dot.red { background: #ef4444; }
+.terminal-dot.yellow { background: #f59e0b; }
+.terminal-dot.green { background: #10b981; }
+
+.terminal-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-left: 8px;
+}
+
+.terminal-body {
+  padding: 16px;
+  font-family: monospace;
+  font-size: 11px;
+  color: #a5b4fc; /* soft violet/blue terminal color */
+  line-height: 1.6;
+  min-height: 180px;
+  max-height: 180px;
+  overflow-y: auto;
+  text-align: left;
+  scrollbar-width: none;
+}
+
+.terminal-body::-webkit-scrollbar {
+  display: none;
+}
+
+.terminal-row {
+  margin-bottom: 4px;
+  word-break: break-all;
+}
+
+.terminal-row.success { color: var(--accent); }
+.terminal-row.info { color: var(--text-muted); }
+.terminal-row.warning { color: #f59e0b; }
+
+.loader-skip-btn {
+  background: transparent;
+  border: 1px solid rgba(var(--accent-rgb), 0.2);
+  color: var(--text-muted);
+  padding: 8px 16px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.loader-skip-btn:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  background: rgba(var(--accent-rgb), 0.05);
+}

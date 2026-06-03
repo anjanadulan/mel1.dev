@@ -535,4 +535,72 @@ document.addEventListener('DOMContentLoaded', () => {
       revealObserver.observe(el);
     });
   }
+
+  // --- 12. Stitch MCP Loader Animation ---
+  const loaderScreen = document.getElementById('loader-screen');
+  const skipBtn = document.getElementById('loader-skip');
+  const terminalLog = document.getElementById('loader-terminal-log');
+  
+  if (loaderScreen && terminalLog) {
+    const logs = [
+      { text: "> mcp_server_client init --target stitch", type: "info" },
+      { text: "Connecting: https://stitch.googleapis.com/mcp ...", type: "info" },
+      { text: "Headers: { X-Goog-Api-Key: 'AQ.Ab8RN6LHBnQy...4kCEiHH' }", type: "info" },
+      { text: "Sending authorization handshake query...", type: "info" },
+      { text: "[Stitch] Handshake OK. Protocol Version: 2024-11-05", type: "success" },
+      { text: "[Stitch] Status: 200 (AUTHORIZED)", type: "success" },
+      { text: "[Stitch] Capabilities: { tools: true, resources: true }", type: "success" },
+      { text: "[Stitch] Querying tool registry catalog...", type: "info" },
+      { text: "[Stitch] Loaded tool: web_search (Web Search)", type: "success" },
+      { text: "[Stitch] Loaded tool: read_url_content (HTTP Reader)", type: "success" },
+      { text: "[Stitch] Loaded tool: run_command (Terminal Executor)", type: "success" },
+      { text: "[Stitch] Loaded tool: ask_question (User Prompter)", type: "success" },
+      { text: "Connection stable. Booting portfolio elements...", type: "info" },
+      { text: "Loading custom design assets (Space Grotesk)... Done", type: "success" },
+      { text: "Initializing interactive mesh overlays... Done", type: "success" },
+      { text: "Stitch MCP Active. Handing over to user...", type: "success" }
+    ];
+    
+    let logIndex = 0;
+    
+    function addLogLine() {
+      if (logIndex < logs.length) {
+        const item = logs[logIndex];
+        const row = document.createElement('div');
+        row.className = `terminal-row ${item.type}`;
+        row.textContent = item.text;
+        terminalLog.appendChild(row);
+        terminalLog.scrollTop = terminalLog.scrollHeight;
+        
+        logIndex++;
+        
+        // Organic organic delay speed based on log type
+        const delay = item.type === 'success' ? 80 : 150 + Math.random() * 120;
+        setTimeout(addLogLine, delay);
+      } else {
+        // Handshake completed, exit screen
+        setTimeout(dismissLoader, 600);
+      }
+    }
+    
+    function dismissLoader() {
+      if (loaderScreen.classList.contains('fade-out')) return;
+      loaderScreen.classList.add('fade-out');
+      document.body.classList.remove('loading');
+      
+      // Trigger scroll reveals after exit
+      setTimeout(() => {
+        const heroSection = document.getElementById('hero');
+        if (heroSection) heroSection.classList.add('in-view');
+      }, 300);
+    }
+    
+    // Start logging sequence
+    setTimeout(addLogLine, 400);
+    
+    // Skip Button Handler
+    if (skipBtn) {
+      skipBtn.addEventListener('click', dismissLoader);
+    }
+  }
 });

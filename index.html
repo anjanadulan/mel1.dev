@@ -66,7 +66,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
+<body class="loading">
+
+  <!-- Futuristic Stitch MCP Connection Loader -->
+  <div id="loader-screen" class="loader-overlay">
+    <div class="loader-container">
+      <!-- Rotating tech orb representing Stitch Connection -->
+      <div class="stitch-orb-wrapper">
+        <div class="stitch-orb-core"></div>
+        <div class="stitch-orb-ring ring-1"></div>
+        <div class="stitch-orb-ring ring-2"></div>
+        <div class="stitch-orb-ring ring-3"></div>
+      </div>
+      
+      <!-- Terminal Connection Log -->
+      <div class="loader-terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">Stitch MCP Console</span>
+        </div>
+        <div class="terminal-body" id="loader-terminal-log"></div>
+      </div>
+      
+      <button class="loader-skip-btn" id="loader-skip">SKIP CONNECTION</button>
+    </div>
+  </div>
 
   <!-- Fixed Interactive Background Elements (User requested fixed background effect animation) -->
   <div class="bg-mesh-container">
